@@ -221,7 +221,7 @@ function applyGridlessSnapping(event) {
 	const ranges = getRangesFromSpeedProvider(ruler.draggedEntity);
 
 	const terrainRulerAvailable = game.modules.get("terrain-ruler")?.active;
-	if (terrainRulerAvailable) {
+	if (terrainRulerAvailable && window.terrainRuler && window.terrainRuler.active) {
 		const segments = ruler.constructor
 			.dragRulerGetRaysFromWaypoints(ruler.waypoints, destination)
 			.map(ray => {
