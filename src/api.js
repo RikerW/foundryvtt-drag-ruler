@@ -133,12 +133,8 @@ export function getColorForDistanceAndToken(distance, token, ranges = null) {
 export function getMovedDistanceFromToken(token) {
 	const terrainRulerAvailable = game.modules.get("terrain-ruler")?.active;
 	const history = getMovementHistory(token);
-	let tokenPos = {x: token.x, y: token.y};
-	if (canvas.grid.type === CONST.GRID_TYPES.GRIDLESS) {
-		tokenPos = token.center;
-	}
 	const segments = CONFIG.Canvas.rulerClass
-		.dragRulerGetRaysFromWaypoints(history, tokenPos)
+		.dragRulerGetRaysFromWaypoints(history, {x: token.x, y: token.y})
 		.map(ray => {
 			return {ray};
 		});

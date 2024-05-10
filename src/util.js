@@ -212,16 +212,6 @@ export function getTokenShape(token) {
 				{x: 0, y: -2},
 				{x: 1, y: -2},
 			]);
-		if (size >= 5)
-			shape = shape.concat([
-				{x: -2, y: 0},
-				{x: 1, y: 1},
-				{x: -1, y: 2},
-				{x: 0, y: 2},
-				{x: 1, y: 2},
-				{x: -2, y: 1},
-				{x: 2, y: 0},
-			]);
 
 		if (getAltOrientationFlagForToken(token, size)) {
 			shape.forEach(space => (space.y *= -1));
@@ -295,12 +285,10 @@ export function isClose(a, b, delta) {
 	return Math.abs(a - b) <= delta;
 }
 
-export function getPointer() {
-	return canvas.app.renderer.events.pointer;
-}
-
 export function getMeasurePosition() {
-	const mousePosition = getPointer().getLocalPosition(canvas.tokens);
+	const mousePosition = canvas.app.renderer.plugins.interaction.mouse.getLocalPosition(
+		canvas.tokens,
+	);
 	const rulerOffset = canvas.controls.ruler.rulerOffset;
 	const measurePosition = {x: mousePosition.x + rulerOffset.x, y: mousePosition.y + rulerOffset.y};
 	return measurePosition;
