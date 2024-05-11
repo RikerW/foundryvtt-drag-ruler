@@ -1,3 +1,6 @@
+## 1.13.5
+- Adjusted to handle disabling Terrain Ruler via its keybind, rather always enabling if the module is loaded at all
+
 ## 1.13.4
 ### Translations
 - New translation: Portuguese (Brazil) (thanks eunaumtenhoid!)

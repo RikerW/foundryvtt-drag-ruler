@@ -79,11 +79,11 @@
 		]
 	},
 	"socket": true,
-	"url": "https://github.com/manuelVo/foundryvtt-drag-ruler",
-	"download": "https://github.com/manuelVo/foundryvtt-drag-ruler/archive/v1.13.4.zip",
-	"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json",
-	"readme": "https://github.com/manuelVo/foundryvtt-drag-ruler/blob/master/README.md",
-	"changelog": "https://github.com/manuelVo/foundryvtt-drag-ruler/blob/master/CHANGELOG.md",
-	"bugs": "https://github.com/manuelVo/foundryvtt-drag-ruler/issues",
-	"allowBugReporter": true
+	"url": "https://github.com/RikerW/foundryvtt-drag-ruler",
+	"download": "https://github.com/RikerW/foundryvtt-drag-ruler/archive/refs/tags/v1.13.5.zip",
+	"manifest": "https://raw.githubusercontent.com/RikerW/foundryvtt-drag-ruler/v1.13.5/module.json",
+	"readme": "https://github.com/RikerW/foundryvtt-drag-ruler/blob/v1.13.5/README.md",
+	"changelog": "https://github.com/RikerW/foundryvtt-drag-ruler/blob/v1.13.5/CHANGELOG.md",
+	"bugs": "https://github.com/RikerW/foundryvtt-drag-ruler/issues",
+	"allowBugReporter": false
 }
